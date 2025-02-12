@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Fest 2023</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <nav>
+                <a href="index.html"><img src="Picsart_25-02-07_17-09-46-698.jpg"></a>
+                <div class="nav-links" id="navlinks">
+                    <i class="fa fa-times" onclick="hidemenu()"></i>
+                    <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">HACKATHONS</a></li>
+                        <li><a href="#">SPORTS</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showmenu()"></i>
+            </nav>
+            <p>Celebrating Sports & Culturals</p>
+        </div>
+    </header>
+
+    <div class="categories-container">
+        <!-- Repeat this block for 10 categories -->
+        <div class="category-card">
+            <a href="category.html?event=sports">
+                <div class="image-container" style="background-image: url('Downloads\op.jpg');">
+                    <div class="overlay"></div>
+                    <h2>Sports</h2>
+                </div>
+            </a>
+        </div>
+
+        <div class="category-card">
+            <a href="category.html?event=dance">
+                <div class="image-container" style="background-image: url('Downloads\op.jpg');">
+                    <div class="overlay"></div>
+                    <h2>Dance</h2>
+                </div>
+            </a>
+        </div>
+        <!-- Add 8 more categories -->
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>Contact us: svce@college.edu</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        var navlinks = document.getElementById("navlinks");
+        function showmenu(){
+            navlinks.style.right="0";
+        }
+        function hidemenu(){
+            navlinks.style.right="-200px";
+        }
+    </script>
+</body>
+</html>

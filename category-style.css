@@ -1,0 +1,118 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0a0a23; /* Dark background */
+    color: #ffffff; /* White text */
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(to right, #1a1a4c, #00001a); /* Royal blue gradient */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #ff69b4; /* Pink accent */
+}
+
+header p {
+    margin: 5px 0 0;
+    font-size: 1.2rem;
+    color: #a9a9a9; /* Light gray */
+}
+
+/* Event Details Section */
+.category-details {
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+    border-radius: 10px;
+    backdrop-filter: blur(10px); /* Glassmorphism effect */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.event-info h2 {
+    color: #ff69b4; /* Pink accent */
+    margin-top: 0;
+}
+
+.event-info p {
+    font-size: 1.1rem;
+}
+
+.event-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.event-info ul li {
+    background: rgba(255, 255, 255, 0.1);
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Register Button */
+.register-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #ff69b4; /* Pink accent */
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.3s ease;
+    margin-top: 20px;
+}
+
+.register-btn:hover {
+    background: #ff4a3d; /* Slightly darker pink on hover */
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background: #1a1a4c; /* Royal blue */
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #a9a9a9; /* Light gray */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .category-details {
+        padding: 15px;
+    }
+
+    .event-info h2 {
+        font-size: 1.5rem;
+    }
+
+    .event-info p {
+        font-size: 1rem;
+    }
+
+    .register-btn {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
